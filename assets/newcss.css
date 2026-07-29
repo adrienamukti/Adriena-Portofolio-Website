@@ -390,11 +390,12 @@ img {
 
 /*===================== About ==================*/
 .about__img {
-  width: 170px;
-  border-radius: 500%;
-  justify-self: center;
-  align-self: center;
-  /* border: 1px solid #fff; */
+    width: 300px;
+    height: 300px;      /* Tinggi harus sama dengan lebar */
+    border-radius: 50%; /* Membuat lingkaran */
+    object-fit: cover;  /* Memotong gambar agar memenuhi lingkaran */
+    display: block;
+    margin: 0 auto;
 }
 
 .about__description {
@@ -438,7 +439,7 @@ img {
 .skills__header {
   display: flex;
   align-items: center;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: var(--mb-5-5);
   cursor: pointer;
 }
 
@@ -991,7 +992,7 @@ img {
   }
 
   .section {
-    padding: 6rem 0 4rem;
+    padding: 8rem 0 4rem;
   }
 
   .section__subtitle {
